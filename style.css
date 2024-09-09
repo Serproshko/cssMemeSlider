@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #558877;
+}
+
+.slider-content{
+    margin: 0 auto;
+    margin-top: 3vh;
+    width: 97vw;
+    height: 94vh;
+    background-color: #fff;
+}
+
+.slider-image{
+    width: 100%;
+    height: 75vh;
+    background-color: #00ff00;
+}
+
+.control-slider{
+    margin: 5vh 1vw 0 0;
+    display: flex;
+}
+
+.text-slider{
+    width: 75%;
+}
+
+.puncts-control{
+    margin-left: 20vw;
+    width: 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+input:checked{
+   background-color: #00ff22;
+}
