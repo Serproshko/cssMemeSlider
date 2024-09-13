@@ -41,29 +41,59 @@ body{
     height: 400%;
 }
 
-.first-text, .second-text{
+.first-text, .second-text, .third-text, .fourth-text{
     margin-top: 6vh;
     color: #fff;
     font-size: 25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.image-slide{
-    background-color: #000000;
+.image-slide-1, .image-slide-2, .image-slide-3, .image-slide-4{
     height: 80vh;
     width: 97vw;
     border-radius: 2vw;
 }
 
+.image-slide-1{
+    background: linear-gradient(90deg, rgba(103, 134, 155, 1) 0%, rgba(87, 132, 155, 1) 50%, rgba(89, 138, 179, 1) 100%);
+}
+
+.image-slide-2{
+    background: linear-gradient(90deg, rgba(59, 60, 62, 1) 0%, rgba(103, 87, 73, 1) 50%, rgba(122, 109, 97, 1) 100%);
+}
+
+.image-slide-3{
+    background: linear-gradient(90deg, rgba(170, 162, 151, 1) 0%, rgba(113, 114, 107, 1) 50%, rgba(10, 12, 17, 1) 100%);    
+}
+
+.image-slide-4{
+    background: linear-gradient(90deg, rgba(107, 37, 39, 1) 0%, rgba(215, 143, 146, 1) 50%, rgba(192, 72, 71, 1) 100%);
+}
+
 .first-img{
-    width: 97vw;
+    transform: translateX(7%);
+    width: 85vw;
     height: 80vh;
     border-radius: 2vw;
 }
 
 .second-img{
-    transform: translateX(20%);
-    width: 70vw;
+    transform: translateX(30%);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 2vw;
+}
+
+.third-img{
+    transform: translateX(30%);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 2vw;
+}
+
+.fourth-img{
+    transform: translateX(70%);
+    width: 40vw;
     height: 80vh;
     border-radius: 2vw;
 }
@@ -116,7 +146,6 @@ input[name="ctrl-sldr"]{
 }
 
 .active-nav1, .active-nav2, .active-nav3, .active-nav4{
-    visibility: hidden;
     margin-right: 1.5vw;
     border: 2px solid #0070aa;
     width: 1.5vw;
@@ -188,8 +217,12 @@ input[name="ctrl-sldr"]{
     visibility: visible;
 }
 
+#second:checked ~ .slider-image .image-slide-2{
+    background: linear-gradient(90deg, rgba(59, 60, 62, 1) 0%, rgba(103, 87, 73, 1) 50%, rgba(122, 109, 97, 1) 100%);
+}
+
 #third:checked ~ .active-control{
-    transform: translate(-1212%, 93.6%);
+    transform: translate(-1212.2%, 93.6%);
 }
 
 #third:checked ~ .active-control .active-nav3{
@@ -198,7 +231,7 @@ input[name="ctrl-sldr"]{
 }
 
 #fourth:checked ~ .active-control{
-    transform: translate(-282%, 93.6%);
+    transform: translate(-282.6%, 93.7%);
 }
 
 #fourth:checked ~ .active-control .active-nav4{
