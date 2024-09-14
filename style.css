@@ -44,7 +44,7 @@ body{
 .first-text, .second-text, .third-text, .fourth-text{
     margin-top: 6vh;
     color: #fff;
-    font-size: 25px;
+    font-size: 150%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -56,6 +56,7 @@ body{
 
 .image-slide-1{
     background: linear-gradient(90deg, rgba(103, 134, 155, 1) 0%, rgba(87, 132, 155, 1) 50%, rgba(89, 138, 179, 1) 100%);
+    width: 107.777778%; /* 1552/1440 */
 }
 
 .image-slide-2{
@@ -71,8 +72,7 @@ body{
 }
 
 .first-img{
-    transform: translateX(7%);
-    width: 85vw;
+    width: 97vw;
     height: 80vh;
     border-radius: 2vw;
 }
@@ -104,7 +104,8 @@ body{
 }
 
 .controls{
-    transform: translate(87%, -100%);
+    margin-left: 84.4vw;
+    transform: translateY(-100%);
     display: flex;
 }
 
@@ -215,10 +216,6 @@ input[name="ctrl-sldr"]{
 #second:checked ~ .active-control .active-nav2{
     background: #0070aa;
     visibility: visible;
-}
-
-#second:checked ~ .slider-image .image-slide-2{
-    background: linear-gradient(90deg, rgba(59, 60, 62, 1) 0%, rgba(103, 87, 73, 1) 50%, rgba(122, 109, 97, 1) 100%);
 }
 
 #third:checked ~ .active-control{
