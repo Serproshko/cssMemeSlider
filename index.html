@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-content">
+        <div class="slider">
+            <input type="radio" name="ctrl-sldr" id="first" checked="checked"/>
+            <input type="radio" name="ctrl-sldr" id="second"/>
+            <input type="radio" name="ctrl-sldr" id="third"/>
+            <input type="radio" name="ctrl-sldr" id="fourth"/>
+
+            <div class="slider-image s1">
+                <img class="first-img" src="meme-1.jpg" alt="">
+                <p class="first-text">Когда гуглишь новую ошибку, а все ссылки уже фиолетовые:</p>
+            </div>
+            <div class="slider-image">
+                <div class="image-slide-2"><img class="second-img" src="meme-2.png" alt=""></div>
+                <p class="second-text">Когда 10 раз перезапустил код, но ошибки так и не ушли:</p>
+            </div>
+            <div class="slider-image">
+                <div class="image-slide-3"><img class="third-img" src="meme-3.png" alt=""></div>
+                <p class="third-text">Каждый уважающий себя работник:</p>
+            </div>
+            <div class="slider-image">
+                <div class="image-slide-4"><img class="fourth-img" src="meme-4.jpg" alt=""></div>
+                <p class="fourth-text">Узбагойся!</p>
+            </div>
+            <div class="active-control">
+                <div class="active-nav1"></div>
+                <div class="active-nav2"></div>
+                <div class="active-nav3"></div>
+                <div class="active-nav4"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <label for="first" class="nav"><div class="circle"></div></label>
+            <label for="second" class="nav"><div class="circle"></div></label>
+            <label for="third" class="nav"><div class="circle"></div></label>
+            <label for="fourth" class="nav"><div class="circle"></div></label>
+        </div>
+    </div>
+</body>
+</html>
