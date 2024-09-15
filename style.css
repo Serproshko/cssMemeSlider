@@ -104,8 +104,7 @@ body{
 }
 
 .controls{
-    margin-left: 84.4vw;
-    transform: translateY(-100%);
+    transform: translate(87%, -100%);
     display: flex;
 }
 
@@ -142,11 +141,12 @@ input[name="ctrl-sldr"]{
 }
 
 .active-control{
-    display: flex;
     transform: translateX(-297%) translateY(93.6%);
+    display: flex;
 }
 
 .active-nav1, .active-nav2, .active-nav3, .active-nav4{
+    visibility: hidden;
     margin-right: 1.5vw;
     border: 2px solid #0070aa;
     width: 1.5vw;
@@ -201,7 +201,7 @@ input[name="ctrl-sldr"]{
 /* --------------------------------------- Active control --------------------------------------------- */
 
 #first:checked ~ .active-control{
-    transform: translate(-2972%, 93.6%);
+    transform: translate(-2908%, 93.8%);
 }
 
 #first:checked ~ .active-control .active-nav1{
@@ -210,7 +210,7 @@ input[name="ctrl-sldr"]{
 }
 
 #second:checked ~ .active-control{
-    transform: translate(-2142%, 93.6%);
+    transform: translate(-2098%, 93.8%);
 }
 
 #second:checked ~ .active-control .active-nav2{
@@ -219,7 +219,7 @@ input[name="ctrl-sldr"]{
 }
 
 #third:checked ~ .active-control{
-    transform: translate(-1212.2%, 93.6%);
+    transform: translate(-1188%, 93.8%);
 }
 
 #third:checked ~ .active-control .active-nav3{
@@ -228,7 +228,7 @@ input[name="ctrl-sldr"]{
 }
 
 #fourth:checked ~ .active-control{
-    transform: translate(-282.6%, 93.7%);
+    transform: translate(-278.2%, 93.8%);
 }
 
 #fourth:checked ~ .active-control .active-nav4{
